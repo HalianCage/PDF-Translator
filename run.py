@@ -7,7 +7,7 @@ import os
 def main():
     # Get the path to the app.py file
     # This ensures it works correctly when packaged by PyInstaller
-    app_file = os.path.join(os.path.dirname(__file__), "complete_code.py")
+    app_file = os.path.join(os.path.dirname(__file__), "app.py")
 
     # Command to run the Streamlit server
     command = ["streamlit", "run", app_file, "--server.headless", "true", "--server.port", "8501"]
